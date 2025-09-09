@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            height: 100vh;
+            gap: 20px;
+        }
+        .Header,.nav,.article,.ads,.footer{
+            background-color: lightyellow;
+        }
+        .Header{
+            grid-column: 1/6;
+            background-color: darkviolet;
+            
+        }
+        .nav{
+            grid-row: 2/6;
+            grid-column: 1/2;
+            background-color: crimson;
+    
+        }
+        .article{
+            grid-row: 2/5;
+            grid-column: 2/5;
+            background-color: darkturquoise;
+        
+        }
+        .ads{
+            grid-row: 2/5;
+            grid-column: 5/6;
+            background-color: darkorange;
+            
+        }
+        .footer{
+            grid-column: 2/6;
+            background-color: darkkhaki;
+
+        }
+        @media screen  and (min-width:320px) and (max-width:424px){
+         .parent{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            height: 100vh;
+            gap: 20px;
+        }
+        .Header,.nav,.article,.ads,.footer{
+            background-color: lightsalmon;
+        }
+        .Header{
+            grid-column: 1/6;
+            
+        }
+        .nav{
+            grid-row: 2/6;
+            grid-column: 1/2;
+    
+        }
+        .article{
+            grid-row: 2/5;
+            grid-column: 2/5;
+        
+        }
+        .ads{
+            grid-row: 2/5;
+            grid-column: 5/6;
+            
+        }
+        .footer{
+            grid-column: 2/6;
+
+         
+        }
+
+    }
+    @media screen and (min-width:430px) and (max-width:768px) {
+       parent{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            height: 100vh;
+            gap: 20px;
+        }
+        .Header,.nav,.article,.ads,.footer{
+            background-color: cornflowerblue;
+        }
+        .Header{
+            grid-column: 1/6;
+            
+        }
+        .nav{
+            grid-row: 2/6;
+            grid-column: 1/2;
+    
+        }
+        .article{
+            grid-row: 2/5;
+            grid-column: 2/5;
+        
+        }
+        .ads{
+            grid-row: 2/5;
+            grid-column: 5/6;
+            
+        }
+        .footer{
+            grid-column: 2/6;
+
+         
+        } 
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="Header">Header</div>
+        <div class="article">Article</div>
+        <div class="nav">Nav</div>
+        <div class="ads">Ads</div>
+        <div class="footer">Footer</div>
+        
+
+    </div>
+</body>
+</html>
