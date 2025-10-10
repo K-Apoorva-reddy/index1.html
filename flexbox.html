@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreeksForGreeks</title>
+    <style>
+        .navbar{
+            background-color: green;
+            position: fixed;
+            color: black;
+            width: 200%;
+        }
+        /* hide data */
+        .dropdown{
+      display: none;
+      position: absolute;
+      margin-top: 5px;
+    }
+
+      .sub:hover .dropdown{
+      display: block;
+      border-top: 3px solid green;
+     }
+     
+     /* side by side */
+     .sub{
+      display: inline-block;
+      margin-left: 30px;
+      position: relative;
+      padding: 10px;
+    } 
+         
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="sub"> COURSES
+            <div class="dropdown">
+                <p>Python Full Stack</p>
+                <p>Java Full Stack</p>
+                <p>Data science</p>
+                <p>AI/ML</p>
+
+            </div>
+
+        </div>
+        <div class="sub">TUTORIALS
+            <div class="dropdown">
+                <p>Python</p>
+                <p>SQL</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>DSA/Data science</p>
+            </div>
+
+        </div>
+        <div class="sub">PRACTICE
+        <div class="dropdown">
+            <P>practice coding problems</P>
+            <P>DSA practice</P>
+            <P>communication</P>
+        </div>    
+        </div>
+        <div class="sub"> JOBS
+             <div class="dropdown">
+                <P>Apply jobs</P>
+                <P>post jobs</P>
+                <p>jobs update</p>
+
+        </div>
+         </div>
+    </div>
+    
+</body>
+</html>
